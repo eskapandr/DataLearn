@@ -4,7 +4,7 @@
 
 Hi, I'm Andrey, an experienced educational project manager, currently working in IT-education, but have a strong intention to switch to data analytics.
 
-I've been studying data analytics in different ways (online courses, blended programs, self-study), and Data Learn courses seem to me one of the best free sources to enter the magical world of data-related professions :)
+My learning pathes varies (online courses, blended programs, self-study, pet projects), and Data Learn courses seem to me one of the best free sources to enter the magical world of data-related professions :)
 
 This is the repository for my assignments in Data Learn's Getting Started with Analytics and Data Engineering (DE-101) course.
 
