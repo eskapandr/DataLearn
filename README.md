@@ -2,7 +2,7 @@
 ## Course by DataLearn
 ## Intro
 
-Hi, I'm Andrey, an experienced educational project manager, currently working in IT-education, but have a strong intention to switch to data analytics.
+Hi, I'm Andrey, currently work in IT-education as a project manager and have a strong intention to switch to data analytics.
 
 My learning pathes varies (online courses, blended programs and chatGPT since very recent time), and Data Learn courses seem to me one of the best free sources to enter the magical world of data-related professions :)
 
