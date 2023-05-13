@@ -6,7 +6,7 @@ Hi, I'm Andrey, an experienced educational project manager, currently working in
 
 My learning pathes varies (online courses, blended programs, self-study, pet projects), and Data Learn courses seem to me one of the best free sources to enter the magical world of data-related professions :)
 
-This is the repository for my assignments in Data Learn's Getting Started with Analytics and Data Engineering (DE-101) course.
+Current repository is for my assignments in Data Learn's Getting Started with Analytics and Data Engineering (DE-101) course.
 
 I commit to this repository from my local machine and use Visual Studio and Windows Git Bash to do so.
 
