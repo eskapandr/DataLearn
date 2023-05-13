@@ -1,6 +1,6 @@
 # Getting Started with Analytics and Data Engineering (DE-101) 
 ## Course by DataLearn
-## Homework by Andrey Pavlov
+## Intro
 
 Hi, I'm Andrey, an experienced educational project manager, currently working in IT-education, but have a strong intention to switch to data analytics.
 
@@ -12,6 +12,6 @@ I commit to this repository from my local machine and use Visual Studio and Wind
 
 ✔️ About Data Learn: https://datalearn.ru/
 
-✔️ Course Repository: https://github.com/Data-Learn/data-engineering
+✔️ DE-101 Course Repository: https://github.com/Data-Learn/data-engineering
 
 ✔️ Homework Requirements: https://www.youtube.com/watch?v=USDNzpTMNSs
