@@ -4,7 +4,7 @@
 
 Hi, I'm Andrey, currently work in IT-education as a project manager and have a strong intention to switch to data analytics.
 
-My learning pathes varies (online courses, blended programs and chatGPT since very recent time), and Data Learn courses seem to me one of the best free sources to enter the magical world of data-related professions :)
+My methods to build up analytical hard skills varies -  from learning online courses and blended programs, reading articles and documentation to watching YouTube manuals and prompting chatGPT. But since I have found Data Learn courses they seem to me one of the best free sources to enter the magical world of data-related professions :)
 
 Current repository is for my assignments in DE-101 course.
 
