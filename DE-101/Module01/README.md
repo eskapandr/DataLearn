@@ -10,6 +10,6 @@ Architecture should have three layers:
 - Storage Layer - data storage layer
 - Business Layer - layer for access to data of business users
 
-Below is my solution:
+Below is my solution for a possible AI-based image generation service (mobile and web) developed by a team at some startup:
 
 ![My Solution](https://github.com/eskapandr/DataLearn/blob/main/DE-101/Module01/images/Mobile_app_data.drawio.png)
