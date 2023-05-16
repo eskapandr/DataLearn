@@ -1,6 +1,6 @@
 # Module 1 - Homework
 
-##Task 1. Analytic Solution Architecture
+## Task 1. Analytic Solution Architecture
 
 We need to draw the top-level architecture of the analytic solution using three layers:
 
