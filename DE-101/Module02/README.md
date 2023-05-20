@@ -9,5 +9,6 @@ Our first task in this module was to install database (PostgreSQL) and SQL-clien
 ## 2. Uploading data to database. Creating SQL tables from Excel tables
 
 Then we needed to download data to our database from .xlsx file Superstore. I have creates tables from prepared .sql files. 
+
 Example:
-![sql_tables](https://github.com/eskapandr/DataLearn/blob/1e5913d45de6fcf6dae7c5656f96c1798ebe262a/DE-101/Module02/sql-tables.png)
+![sql_tables](https://github.com/eskapandr/DataLearn/blob/4e254d77da12715d7779395339a36187d5bbc754/DE-101/Module02/sql_tables.png)
