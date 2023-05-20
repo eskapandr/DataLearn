@@ -2,7 +2,7 @@
 
 ## 1. Analytic Solution Architecture
 
-Our first task in this module was to draw the top-level architecture of the analytic solution using draw.io or similar tools
+Our first task in this module was to draw the top-level architecture of the analytic solution using draw.io or similar tools.
 
 Architecture should have three layers:
 
