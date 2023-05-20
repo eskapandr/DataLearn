@@ -8,4 +8,5 @@ Our first task in this module was to install database (PostgreSQL) and SQL-clien
 
 ## 2. Uploading data to database. Creating SQL tables from Excel tables
 
-Then we needed to download data to our database from .xlsx file Superstore.
+Then we needed to download data to our database from .xlsx file Superstore. I have creates tables from prepared .sql files. 
+Example:
