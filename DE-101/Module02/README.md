@@ -4,14 +4,9 @@
 
 Our first task in this module was to install the database (PostgreSQL) and the SQL client (Dbeaver). I have sucсessfuly installed them and ran them on my local machine (Windows 10).
 
-![postgres_dbeaver](https://github.com/eskapandr/DataLearn/blob/4952a7488f9ceabf7b8b26c67579de8b48224095/DE-101/Module02/dbeaver_postgres.png)
-
 ## 2. Loading data into the database. Creating SQL tables from Excel spreadsheets
 
 Then we needed to load the data into the database from the Superstore .xlsx file. I used SQL scripts prepared by the course team. But there are other ways, like converting Excel spreadsheets into .csv files and loading them directly into Dbeaver or SQL Alchemy (DB-framework for Python).
-
-Result:
-![sql_tables](https://github.com/eskapandr/DataLearn/blob/4e254d77da12715d7779395339a36187d5bbc754/DE-101/Module02/sql_tables.png)
 
 ## 3. SQL queries to database
 
