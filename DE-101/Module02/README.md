@@ -29,8 +29,6 @@ order by 4 desc
 
 2. Aggregated results of sales managers.
 
-![managers_sales_profit](https://github.com/eskapandr/DataLearn/blob/ddc3095754ff403d886f290348cab35dd621ba1c/DE-101/Module02/images/managers_sales_profit.png)
-
 ```sql
 with managers_results(person, count_orders, sum_sales, sum_profit) 
 as
@@ -47,3 +45,4 @@ union
 select * from total_results
 order by 4 desc
 ```
+![managers_sales_profit](https://github.com/eskapandr/DataLearn/blob/ddc3095754ff403d886f290348cab35dd621ba1c/DE-101/Module02/images/managers_sales_profit.png)
