@@ -42,7 +42,7 @@ order by 4 desc
 ```
 ![managers_sales_profit](https://github.com/eskapandr/DataLearn/blob/ddc3095754ff403d886f290348cab35dd621ba1c/DE-101/Module02/images/managers_sales_profit.png)
 
-### 3.3. Annual profit and dynamics by product segment
+### 3.3. Annual profit and YoY dynamics by product segment
 
 ```sql
 with segment_profit_year(year, segment, profit)
@@ -50,7 +50,7 @@ as
 (select extract(year from order_date) as year, segment, profit
 from orders)
 select year, segment, sum(profit) as year_profit, 
-	   round((sum(profit) * 100 / lag(sum(profit)) over(partition by segment order by year) ) - 100, 2) as year_dynamics
+	   round((sum(profit) * 100 / lag(sum(profit)) over(partition by segment order by year) ) - 100, 2) as yoy_dynamics
 from segment_profit_year
 group by year, segment 
 order by 2, 1 
