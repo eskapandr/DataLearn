@@ -55,3 +55,4 @@ from segment_profit_year
 group by year, segment 
 order by 2, 1 
 ```
+![annual_year_dynamics](https://github.com/eskapandr/DataLearn/blob/65d90a327a71c92364d404fae40f0f8c58189d48/DE-101/Module02/images/annual_segment_profit.png)
