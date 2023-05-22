@@ -12,7 +12,7 @@ Then we needed to load the data into the database from the Superstore .xlsx file
 
 Below are examples of my SQL queries to the Superstore database.
 
-### 3.1. Sum of sales and profits for product categories and subcategories.
+### 3.1. Sum of sales and profits for product categories and subcategories
 
 ```sql
 select category, subcategory, sum(sales) as sum_sales, sum(profit) as sum_profit
@@ -41,3 +41,17 @@ select * from total_results
 order by 4 desc
 ```
 ![managers_sales_profit](https://github.com/eskapandr/DataLearn/blob/ddc3095754ff403d886f290348cab35dd621ba1c/DE-101/Module02/images/managers_sales_profit.png)
+
+### 3.3. Annual profit and dynamics by product segment
+
+```sql
+with segment_profit_year(year, segment, profit)
+as
+(select extract(year from order_date) as year, segment, profit
+from orders)
+select year, segment, sum(profit) as year_profit, 
+	   round((sum(profit) * 100 / lag(sum(profit)) over(partition by segment order by year) ) - 100, 2) as year_dynamics
+from segment_profit_year
+group by year, segment 
+order by 2, 1 
+```
