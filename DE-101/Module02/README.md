@@ -12,7 +12,7 @@ Then we needed to load the data into the database from the Superstore .xlsx file
 
 Below are examples of my SQL queries to the Superstore database.
 
-1. Sum of sales and profits for product categories and subcategories.
+### 3.1. Sum of sales and profits for product categories and subcategories.
 
 ```sql
 select category, subcategory, sum(sales) as sum_sales, sum(profit) as sum_profit
@@ -22,7 +22,7 @@ order by 4 desc
 ```
 ![categories_sales_profit](https://github.com/eskapandr/DataLearn/blob/ddc3095754ff403d886f290348cab35dd621ba1c/DE-101/Module02/images/categories_sales_profit.png)
 
-2. Aggregated results of sales managers.
+### 3.2. Aggregated results of sales managers
 
 ```sql
 with managers_results(person, count_orders, sum_sales, sum_profit) 
