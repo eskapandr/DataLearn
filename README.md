@@ -2,13 +2,9 @@
 ## Course by DataLearn
 ## Intro
 
-Hi, I'm Andrey, an experienced project manager in IT-education. My current goal is to move into the field of data analytics.
+Hi, I'm Andrey, an experienced project manager, currently in IT-education. I am passioned about data analytics, and my goal is to move into a position that is directly related to working with data. Since I found Data Learn community, it seems to be one of the best free learning sources for it.
 
-Since I found Data Learn community, it seems to be one of the best free sources to enter the magical world of data-related professions :)
-
-This repository is for my DE-101 course assignments.
-
-I commit from my local machine and use Visual Studio and Windows Git Bash.
+This repository is for my DE-101 course assignments. I commit from my local machine and use Visual Studio and Git Bash.
 
 ✔️ About Data Learn: https://datalearn.ru/
 
