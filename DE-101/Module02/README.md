@@ -2,7 +2,7 @@
 
 ## 1. Installing the database and SQL-client. Connecting to the database
 
-Our first task in this module was to install the database (PostgreSQL) and the SQL client (Dbeaver). I have sucсessfuly installed them and ran them on my local machine (Windows 10).
+Our first task in this module was to install the database (PostgreSQL) and the SQL client (Dbeaver). I have sucсessfuly installed them on my local machine (Windows 10).
 
 ## 2. Loading data into the database. Creating SQL tables from Excel spreadsheets
 
