@@ -2,9 +2,9 @@
 ## Course by DataLearn
 ## Intro
 
-Hi, I'm Andrey, an experienced project manager in IT-education and my current goal is to move into the field of data analytics.
+Hi, I'm Andrey, an experienced project manager in IT-education. My current goal is to move into the field of data analytics.
 
-My methods of developing analytical skills vary from studying courses, reading articles and documentation to watching tutorials on YouTube and using chatGPT prompts. But since I found Data Learn community, it seems to be one of the best free sources to enter the magical world of data-related professions :)
+Since I found Data Learn community, it seems to be one of the best free sources to enter the magical world of data-related professions :)
 
 This repository is for my DE-101 course assignments.
 
