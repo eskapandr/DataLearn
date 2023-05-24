@@ -20,6 +20,7 @@ from orders
 group by category, subcategory
 order by 1, 4 desc
 ```
+![categories_sales_profit](https://github.com/eskapandr/DataLearn/blob/6a33c8d3f82a9d2654c118a61afc52a50374ba38/DE-101/Module02/images/categories_sales_profit.png)
 
 ### 3.2. Aggregated results of sales managers
 
@@ -39,7 +40,7 @@ union
 select * from total_results
 order by 4 desc
 ```
-
+![managers_sales_profit](https://github.com/eskapandr/DataLearn/blob/6a33c8d3f82a9d2654c118a61afc52a50374ba38/DE-101/Module02/images/managers_sales_profit.png)
 
 ### 3.3. Annual profit and YoY dynamics by product segment
 
@@ -54,3 +55,4 @@ from segment_profit_year
 group by year, segment 
 order by 2, 1 
 ```
+![annual_segment_profit](https://github.com/eskapandr/DataLearn/blob/6a33c8d3f82a9d2654c118a61afc52a50374ba38/DE-101/Module02/images/annual_segment_profit.png)
