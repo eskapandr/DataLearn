@@ -6,7 +6,7 @@ Our first task in this module was to install the database (PostgreSQL) and the S
 
 ## 2. Loading data into the database. Creating SQL tables from Excel spreadsheets
 
-Then we needed to load the data into the database from the Superstore .xlsx file. I used SQL scripts prepared by the course team. But there are other ways, like converting Excel spreadsheets into .csv files and loading them directly into Dbeaver or SQL Alchemy (DB-framework for Python).
+Then we needed to load data into the database from the Superstore.xlsx file. I used SQL scripts prepared by the course team. But there are other ways for doing that, like converting Excel spreadsheets into .csv files and loading them directly into Dbeaver or using SQL Alchemy (DB-framework for Python).
 
 ## 3. SQL queries to database
 
