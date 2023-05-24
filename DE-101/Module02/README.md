@@ -18,29 +18,28 @@ Below are examples of my SQL queries to the Superstore database.
 select category, subcategory, sum(sales) as sum_sales, sum(profit) as sum_profit
 from orders
 group by category, subcategory
-order by 4 desc
+order by 1, 4 desc
 ```
-![categories_sales_profit](https://github.com/eskapandr/DataLearn/blob/ddc3095754ff403d886f290348cab35dd621ba1c/DE-101/Module02/images/categories_sales_profit.png)
 
 ### 3.2. Aggregated results of sales managers
 
 ```sql
 with managers_results(person, count_orders, sum_sales, sum_profit) 
 as
-(select person, count(order_id), sum(sales), sum(profit)
+(select person, count(order_id), round(sum(sales), 2), round(sum(profit), 2)
 from people
 join orders on people.region = orders.region 
 group by person),
 total_results(person, count_orders, sum_sales, sum_profit) 
 as
-(select 'total', count(order_id), sum(sales), sum(profit)
+(select 'total', count(order_id), round(sum(sales), 2), round(sum(profit), 2)
 from orders)
 select * from managers_results
 union
 select * from total_results
 order by 4 desc
 ```
-![managers_sales_profit](https://github.com/eskapandr/DataLearn/blob/ddc3095754ff403d886f290348cab35dd621ba1c/DE-101/Module02/images/managers_sales_profit.png)
+
 
 ### 3.3. Annual profit and YoY dynamics by product segment
 
@@ -55,4 +54,3 @@ from segment_profit_year
 group by year, segment 
 order by 2, 1 
 ```
-![annual_year_dynamics](https://github.com/eskapandr/DataLearn/blob/65d90a327a71c92364d404fae40f0f8c58189d48/DE-101/Module02/images/annual_segment_profit.png)
