@@ -56,3 +56,7 @@ group by year, segment
 order by 2, 1 
 ```
 ![annual_segment_profit](https://github.com/eskapandr/DataLearn/blob/6a33c8d3f82a9d2654c118a61afc52a50374ba38/DE-101/Module02/images/annual_segment_profit.png)
+
+## 4. Creating data model 
+
+At this step we need to create dimensional data model (conceptual, logical and phisical). I used SQLdbm for it, a tool suggested by course author.
