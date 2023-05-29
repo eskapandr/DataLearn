@@ -12,7 +12,20 @@ Then we needed to load data into the database from the Superstore.xlsx file. I u
 
 Below are examples of my SQL queries to the Superstore database.
 
-### 3.1. Sum of sales and profits for product categories and subcategories
+### 3.1. Overview
+```sql
+select round(sum(sales), 2) as total_sales,
+	   round(sum(profit), 2) as total_profit,
+	   round(sum(profit) / sum(sales) * 100, 2) as profit_ratio,
+	   round(sum(profit) / count(distinct order_id), 2) as profit_per_order,
+	   round(sum(sales) / count(distinct customer_id), 2) as sales_per_customer,
+	   round(avg(discount), 2) as avg_discount,
+	   count(distinct product_id) as products_count,	
+	   count(distinct order_id) as orders_count
+from orders;
+```
+
+### Sales and profit over time by product category and subcategory
 
 ```sql
 select category, subcategory, sum(sales) as sum_sales, sum(profit) as sum_profit
@@ -22,7 +35,7 @@ order by 1, 4 desc
 ```
 ![categories_sales_profit](https://github.com/eskapandr/DataLearn/blob/6a33c8d3f82a9d2654c118a61afc52a50374ba38/DE-101/Module02/images/categories_sales_profit.png)
 
-### 3.2. Aggregated results of sales managers
+### Sales, profit and orders count over time by manager
 
 ```sql
 with managers_results(person, count_orders, sum_sales, sum_profit) 
@@ -42,7 +55,7 @@ order by 4 desc
 ```
 ![managers_sales_profit](https://github.com/eskapandr/DataLearn/blob/6a33c8d3f82a9d2654c118a61afc52a50374ba38/DE-101/Module02/images/managers_sales_profit.png)
 
-### 3.3. Annual profit and YoY dynamics by product segment
+### Annual profit and YoY dynamics by customer segment
 
 ```sql
 with segment_profit_year(year, segment, profit)
