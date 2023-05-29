@@ -15,21 +15,21 @@ Below are examples of my SQL queries to the Superstore database.
 ### 3.1. Overview
 ```sql
 select round(sum(sales), 2) as total_sales,
-	   round(sum(profit), 2) as total_profit,
-	   round(sum(profit) / sum(sales) * 100, 2) as profit_ratio,
-	   round(sum(profit) / count(distinct order_id), 2) as profit_per_order,
-	   round(sum(sales) / count(distinct customer_id), 2) as sales_per_customer,
-	   round(avg(discount), 2) as avg_discount,
-	   count(distinct product_id) as products_count,	
-	   count(distinct order_id) as orders_count
+	round(sum(profit), 2) as total_profit,
+	round(sum(profit) / sum(sales) * 100, 2) as profit_ratio,
+	round(sum(profit) / count(distinct order_id), 2) as profit_per_order,
+	round(sum(sales) / count(distinct customer_id), 2) as sales_per_customer,
+	round(avg(discount), 2) as avg_discount,
+	count(distinct product_id) as products_count,	
+	count(distinct order_id) as orders_count
 from orders;
 ```
 ### 3.2. Monthly sales by Segment
 ```sql
 select extract(year from order_date) as year,
-	   extract(month from order_date) as month,
-	   segment,
-	   round(sum(sales), 2) as sum_sales
+	extract(month from order_date) as month,
+	segment,
+	round(sum(sales), 2) as sum_sales
 from orders
 group by year, month, segment
 order by 1, 2, 3;
