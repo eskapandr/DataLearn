@@ -24,19 +24,34 @@ select round(sum(sales), 2) as total_sales,
 	   count(distinct order_id) as orders_count
 from orders;
 ```
-
-### Sales and profit over time by product category and subcategory
-
+### 3.2. Monthly sales by Segment
+```sql
+select extract(year from order_date) as year,
+	   extract(month from order_date) as month,
+	   segment,
+	   round(sum(sales), 2) as sum_sales
+from orders
+group by year, month, segment
+order by 1, 2, 3
+```
+### 3.3. Monthly sales by Product Category
+```sql
+select extract(year from order_date) as year,
+	   extract(month from order_date) as month,
+	   category,
+	   round(sum(sales), 2) as sum_sales
+from orders
+group by year, month, category 
+order by 1, 2, 3
+```
+### 3.4. Sales and profit over time by product category and subcategory
 ```sql
 select category, subcategory, sum(sales) as sum_sales, sum(profit) as sum_profit
 from orders
 group by category, subcategory
 order by 1, 4 desc
 ```
-![categories_sales_profit](https://github.com/eskapandr/DataLearn/blob/6a33c8d3f82a9d2654c118a61afc52a50374ba38/DE-101/Module02/images/categories_sales_profit.png)
-
-### Sales, profit and orders count over time by manager
-
+### 3.5 Sales, profit and orders count over time by manager
 ```sql
 with managers_results(person, count_orders, sum_sales, sum_profit) 
 as
@@ -53,10 +68,7 @@ union
 select * from total_results
 order by 4 desc
 ```
-![managers_sales_profit](https://github.com/eskapandr/DataLearn/blob/6a33c8d3f82a9d2654c118a61afc52a50374ba38/DE-101/Module02/images/managers_sales_profit.png)
-
-### Annual profit and YoY dynamics by customer segment
-
+### 3.6. Annual profit and YoY dynamics by customer segment
 ```sql
 with segment_profit_year(year, segment, profit)
 as
@@ -68,7 +80,13 @@ from segment_profit_year
 group by year, segment 
 order by 2, 1 
 ```
-![annual_segment_profit](https://github.com/eskapandr/DataLearn/blob/6a33c8d3f82a9d2654c118a61afc52a50374ba38/DE-101/Module02/images/annual_segment_profit.png)
+### 3.7. Sales over time per region and state
+```sql
+select region, state, sum(sales) as sum_sales
+from orders
+group by region, state
+order by 1, 3 desc
+```
 
 ## 4. Creating data model 
 
