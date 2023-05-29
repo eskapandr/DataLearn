@@ -32,7 +32,7 @@ select extract(year from order_date) as year,
 	   round(sum(sales), 2) as sum_sales
 from orders
 group by year, month, segment
-order by 1, 2, 3
+order by 1, 2, 3;
 ```
 ### 3.3. Monthly sales by Product Category
 ```sql
@@ -42,11 +42,14 @@ select extract(year from order_date) as year,
 	   round(sum(sales), 2) as sum_sales
 from orders
 group by year, month, category 
-order by 1, 2, 3
+order by 1, 2, 3;
 ```
 ### 3.4. Sales and profit over time by product category and subcategory
 ```sql
-select category, subcategory, sum(sales) as sum_sales, sum(profit) as sum_profit
+select category, 
+	   subcategory, 
+	   sum(sales) as sum_sales, 
+	   sum(profit) as sum_profit
 from orders
 group by category, subcategory
 order by 1, 4 desc
@@ -55,37 +58,50 @@ order by 1, 4 desc
 ```sql
 with managers_results(person, count_orders, sum_sales, sum_profit) 
 as
-(select person, count(order_id), round(sum(sales), 2), round(sum(profit), 2)
+(select person, 
+		count(order_id), 
+		round(sum(sales), 2), 
+		round(sum(profit), 2)
 from people
 join orders on people.region = orders.region 
 group by person),
 total_results(person, count_orders, sum_sales, sum_profit) 
 as
-(select 'total', count(order_id), round(sum(sales), 2), round(sum(profit), 2)
+(select 'total', 
+		count(order_id), 
+		round(sum(sales), 2), 
+		round(sum(profit), 2)
 from orders)
 select * from managers_results
 union
 select * from total_results
-order by 4 desc
+order by 4 desc;
 ```
 ### 3.6. Annual profit and YoY dynamics by customer segment
 ```sql
 with segment_profit_year(year, segment, profit)
 as
-(select extract(year from order_date) as year, segment, profit
+(select extract(year from order_date) as year, 
+		segment, 
+		profit
 from orders)
-select year, segment, sum(profit) as year_profit, 
-	   round((sum(profit) * 100 / lag(sum(profit)) over(partition by segment order by year) ) - 100, 2) as yoy_dynamics
+select year, 
+	   segment, 
+	   sum(profit) as year_profit, 
+	   round((sum(profit) * 100 / lag(sum(profit)) over(partition by segment order by year) ) - 100, 2) 
+	   as yoy_dynamics
 from segment_profit_year
 group by year, segment 
-order by 2, 1 
+order by 2, 1; 
 ```
-### 3.7. Sales over time per region and state
+### 3.7. Sales over time by region and state
 ```sql
-select region, state, sum(sales) as sum_sales
+select region, 
+	   state, 
+	   sum(sales) as sum_sales
 from orders
 group by region, state
-order by 1, 3 desc
+order by 1, 3 desc;
 ```
 
 ## 4. Creating data model 
