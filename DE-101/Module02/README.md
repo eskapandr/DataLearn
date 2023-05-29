@@ -24,7 +24,7 @@ select round(sum(sales), 2) as total_sales,
 	count(distinct order_id) as orders_count
 from orders;
 ```
-### 3.2. Monthly sales by Segment
+### 3.2. Monthly sales by segment
 ```sql
 select extract(year from order_date) as year,
 	extract(month from order_date) as month,
@@ -34,7 +34,7 @@ from orders
 group by year, month, segment
 order by 1, 2, 3;
 ```
-### 3.3. Monthly sales by Product Category
+### 3.3. Monthly sales by product category
 ```sql
 select extract(year from order_date) as year,
        extract(month from order_date) as month,
@@ -77,7 +77,7 @@ union
 select * from total_results
 order by 4 desc;
 ```
-### 3.6. Annual profit and YoY dynamics by customer segment
+### 3.6. Annual profit and YoY profit dynamics by segment
 ```sql
 with segment_profit_year(year, segment, profit)
 as
