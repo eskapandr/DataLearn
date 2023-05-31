@@ -107,3 +107,11 @@ order by 1, 3 desc;
 ## 4. Creating data model 
 
 At this step we need to create dimensional data model (conceptual, logical and phisical). I used SQLdbm for it, a tool suggested by course author.
+
+### Conceptual scheme
+
+![conceptual_scheme](https://github.com/eskapandr/DataLearn/blob/295d0ce08f967542ef7b5c669e926780a2562ce2/DE-101/Module02/images/conceptual_scheme.png)
+
+### Physical scheme
+
+![physical_scheme](https://github.com/eskapandr/DataLearn/blob/295d0ce08f967542ef7b5c669e926780a2562ce2/DE-101/Module02/images/physical_scheme.png)
