@@ -2,11 +2,11 @@
 
 ## 1. Installing the database and SQL-client. Connecting to the database
 
-Our first task in this module was to install the database (PostgreSQL) and the SQL client (Dbeaver). I have sucсessfuly installed them on my local machine (Windows 10).
+Our first task in this module was to install the database [PostgreSQL](https://www.postgresql.org/) and the SQL client [Dbeaver](https://dbeaver.io/). I have sucсessfuly installed them on my local machine (Windows 10).
 
 ## 2. Loading data into the database. Creating SQL tables from Excel spreadsheets
 
-Then we needed to load data into the database from the Superstore.xlsx file. I used SQL scripts prepared by the course team. But there are other ways for doing that, like converting Excel spreadsheets into .csv files and loading them directly into Dbeaver or using SQL Alchemy (DB-framework for Python).
+Then we needed to load data into the database from the Superstore.xlsx file. I used SQL scripts prepared by the course team. But there are other ways for doing that, like converting Excel spreadsheets into .csv files and loading them directly into Dbeaver or using [SQL Alchemy](https://www.sqlalchemy.org/).
 
 ## 3. SQL queries to database
 
@@ -106,7 +106,7 @@ order by 1, 3 desc;
 
 ## 4. Creating data model 
 
-At this step we need to create dimensional data model (conceptual, logical and phisical). I used SQLdbm for it, a tool suggested by course author.
+At this step we need to create dimensional data model (conceptual, logical and phisical). I used [SQLdbm](https://app.sqldbm.com/) for it, a tool suggested by course author.
 
 ### Conceptual scheme
 
