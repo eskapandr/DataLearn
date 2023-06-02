@@ -10,7 +10,6 @@ Then we needed to load data into the database from the Superstore.xlsx file. I u
 
 ```python
 import pandas as pd 
-import numpy as np 
 from sqlalchemy import create_engine
 
 pip install psycopg2
