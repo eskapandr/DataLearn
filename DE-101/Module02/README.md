@@ -132,3 +132,15 @@ At this step we need to create dimensional data model (conceptual, logical and p
 ### Physical scheme
 
 ![physical_scheme](https://github.com/eskapandr/DataLearn/blob/295d0ce08f967542ef7b5c669e926780a2562ce2/DE-101/Module02/images/physical_scheme.png)
+
+## 5. Connecting to the cloud database
+
+Our next task was to create a database on AWS Lightsail cloud server and upload our data for staging layer and dimensional model for business layer from sql files there.
+- Staging [stg.orders.sql](https://github.com/Data-Learn/data-engineering/blob/03f51ea85791fb1d6a86659bba3040db0b98471b/DE-101%20Modules/Module02/DE%20-%20101%20Lab%202.1/stg.orders.sql)
+- Business Layer [from_stg_to_dw_sql](https://github.com/Data-Learn/data-engineering/blob/03f51ea85791fb1d6a86659bba3040db0b98471b/DE-101%20Modules/Module02/DE%20-%20101%20Lab%202.1/from_stg_to_dw.sql)
+
+### My database on AWS Lightsail
+![aws_lightsail_db]()
+
+### Updated database in Dbeaver
+![aws_db_connection]()
