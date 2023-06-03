@@ -15,14 +15,14 @@ from sqlalchemy import create_engine
 pip install psycopg2
 
 # connection
-# pass - your pass, localhost:5432 - coonect in local host, name bd - postgres (the name of your db) 
+# pass - your pass, localhost:5432 - connection to local host, postgres - the name of your db
 con = create_engine('postgresql+psycopg2://postgres:pass @localhost:5432/postgres')
 
 #creating dataframe from csv
 df = pd.read_csv('<path_to_csv>')
 
 #loading into the database
-df.to_sql('<the_name_of your_db>', con, index=False, if_exists='replace', method='multi')
+df.to_sql('<the_name_of_your_db>', con, index=False, if_exists='replace', method='multi')
 ```
 ## 3. SQL queries to database
 
@@ -122,7 +122,7 @@ order by 1, 3 desc;
 
 ## 4. Creating data model 
 
-At this step we need to create dimensional data model (conceptual, logical and phisical). I used [SQLdbm](https://app.sqldbm.com/) for it, a tool suggested by course author.
+At this step we needed to create dimensional data model (conceptual, logical and phisical schema). I used [SQLdbm](https://app.sqldbm.com/) for it, a tool suggested by the course author.
 
 ### Conceptual scheme
 
