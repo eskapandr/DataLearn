@@ -144,10 +144,13 @@ Our next task was to create a database on AWS Lightsail cloud server and upload 
 ### Updatated database in Dbeaver
 ![aws_db_connection](https://github.com/eskapandr/DataLearn/blob/008836014c5fa14e5b8a7b8b97ac6378d19de637/DE-101/Module02/images/aws_db_connection.png)
 
-## 6. Creating dashboard in Looker Data Studio
+## 6. Creating the dashboard in Looker Data Studio
 
-In the last part of the module, we tried to connect in Looker Data Studio to the cloud database created in the previous step and extract data to create an online dashboard.
+In the last part of the module, we tried to connect in Looker Data Studio to the cloud database created in the previous step and extract data to build the online dashboard.
 
 Here are some screenshots from my dashboard Superstore Key Metrics
+![dashboard_1](https://github.com/eskapandr/DataLearn/blob/00c6f9e62bdb677a0c2415fb1f0725d292c39768/DE-101/Module02/images/dashboard_1.png)
+![dashboard_2](https://github.com/eskapandr/DataLearn/blob/00c6f9e62bdb677a0c2415fb1f0725d292c39768/DE-101/Module02/images/dashboard_2.png)
+![dashboard_3](https://github.com/eskapandr/DataLearn/blob/00c6f9e62bdb677a0c2415fb1f0725d292c39768/DE-101/Module02/images/dashboard_3.png)
 
-And [online dashboard](https://lookerstudio.google.com/s/lzI2Dc-IdPk)
+And [the online dashboard](https://lookerstudio.google.com/s/lzI2Dc-IdPk)
