@@ -122,7 +122,7 @@ order by 1, 3 desc;
 
 ## 4. Creating data model 
 
-At this step we needed to create dimensional data model (conceptual, logical and physical schema schema). I used [SQLdbm](https://app.sqldbm.com/) for it, a tool suggested by the course author.
+At this step we needed to create dimensional data model (conceptual, logical and physical schema). I used [SQLdbm](https://app.sqldbm.com/) for it, a tool suggested by the course author.
 
 ### Conceptual scheme
 
