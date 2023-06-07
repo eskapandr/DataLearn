@@ -122,7 +122,7 @@ order by 1, 3 desc;
 
 ## 4. Creating data model 
 
-At this step we need to create dimensional data model (conceptual, logical and phisical). I used [SQLdbm](https://app.sqldbm.com/) for it, a tool suggested by course author.
+At this step we need to create dimensional data model (conceptual, logical and physical schema). I used [SQLdbm](https://app.sqldbm.com/) for it, a tool suggested by course author.
 
 ### Conceptual scheme
 
@@ -138,8 +138,16 @@ Our next task was to create a database on AWS Lightsail cloud server and upload 
 - Staging [stg.orders.sql](https://github.com/Data-Learn/data-engineering/blob/03f51ea85791fb1d6a86659bba3040db0b98471b/DE-101%20Modules/Module02/DE%20-%20101%20Lab%202.1/stg.orders.sql)
 - Business Layer [from_stg_to_dw_sql](https://github.com/Data-Learn/data-engineering/blob/03f51ea85791fb1d6a86659bba3040db0b98471b/DE-101%20Modules/Module02/DE%20-%20101%20Lab%202.1/from_stg_to_dw.sql)
 
-### My database on AWS Lightsail
+### My cloud database on AWS Lightsail
 ![aws_lightsail_db](https://github.com/eskapandr/DataLearn/blob/008836014c5fa14e5b8a7b8b97ac6378d19de637/DE-101/Module02/images/db_lightsail.png)
 
-### Updated database in Dbeaver
+### Updatated database in Dbeaver
 ![aws_db_connection](https://github.com/eskapandr/DataLearn/blob/008836014c5fa14e5b8a7b8b97ac6378d19de637/DE-101/Module02/images/aws_db_connection.png)
+
+## 6. Creating Dashboard in Looker Data Studio
+
+In the last part of the module, we tried to connect in Looker Data Studio to the cloud database created in the previous step and extract data to create an online dashboard.
+
+Here are some screenshots from my dashboard Superstore Key Metrics
+
+And [online dashboard](https://lookerstudio.google.com/s/lzI2Dc-IdPk)
