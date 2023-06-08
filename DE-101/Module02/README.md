@@ -24,7 +24,7 @@ df = pd.read_csv('<path_to_csv>')
 #loading into the database
 df.to_sql('<the_name_of_your_db>', con, index=False, if_exists='replace', method='multi')
 ```
-## 3. SQL queries to database
+## 3. SQL queries to the database
 
 Below are examples of my SQL queries to the Superstore database.
 
@@ -120,9 +120,9 @@ group by region, state
 order by 1, 3 desc;
 ```
 
-## 4. Creating data model 
+## 4. Creating the data model 
 
-At this step we needed to create dimensional data model (conceptual, logical and physical schema). I used [SQLdbm](https://app.sqldbm.com/) for it, a tool suggested by the course author.
+At this step we were asked to create a dimensional data model (conceptual, logical and physical schema). I used [SQLdbm](https://app.sqldbm.com/) for it, a tool suggested by the course author.
 
 ### Conceptual scheme
 
@@ -131,6 +131,8 @@ At this step we needed to create dimensional data model (conceptual, logical and
 ### Physical scheme
 
 ![physical_scheme](https://github.com/eskapandr/DataLearn/blob/295d0ce08f967542ef7b5c669e926780a2562ce2/DE-101/Module02/images/physical_scheme.png)
+
+My [SQL-script](https://github.com/eskapandr/DataLearn/blob/a843751eaed6ac9e4a8b2a17b30ec55e2bf03147/DE-101/Module02/scripts/supersales_db.sql) for creating the data model
 
 ## 5. Connecting to the cloud database
 
