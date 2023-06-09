@@ -45,7 +45,7 @@ from orders;
 select extract(year from order_date) as year,
 	extract(month from order_date) as month,
 	segment,
-	round(sum(sales), 2) as total_sales
+	round(sum(sales), 2) as monthly_sales
 from orders
 group by year, month, segment
 order by 1, 2, 3;
@@ -55,7 +55,7 @@ order by 1, 2, 3;
 select extract(year from order_date) as year,
        extract(month from order_date) as month,
        category,
-       round(sum(sales), 2) as total_sales
+       round(sum(sales), 2) as monthly_sales
 from orders
 group by year, month, category 
 order by 1, 2, 3;
@@ -110,14 +110,15 @@ from segment_profit_year
 group by year, segment 
 order by 2, 1; 
 ```
-### 3.7. Sales over time by region and state
+### 3.7. Top-10 states by sales over time
 ```sql
 select region, 
        state, 
-       sum(sales) as total_sales
+       round(sum(sales), 2) as total_sales
 from orders
 group by region, state
-order by 1, 3 desc;
+order by 3 desc
+limit 10
 ```
 
 ## 4. Creating the data model 
