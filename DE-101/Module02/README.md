@@ -40,6 +40,8 @@ select round(sum(sales), 2) as total_sales,
 	count(distinct order_id) as orders_count
 from orders;
 ```
+[result](https://github.com/eskapandr/DataLearn/blob/591cfd6a561d8e1bb2989c64615bc713ff6480dc/DE-101/Module02/images/sql_querie_1.png)
+
 ### 3.2. Monthly sales by segment
 ```sql
 select extract(year from order_date) as year,
@@ -50,6 +52,8 @@ from orders
 group by year, month, segment
 order by 1, 2, 3;
 ```
+[result](https://github.com/eskapandr/DataLearn/blob/591cfd6a561d8e1bb2989c64615bc713ff6480dc/DE-101/Module02/images/sql_querie_2.png)
+
 ### 3.3. Monthly sales by product category
 ```sql
 select extract(year from order_date) as year,
@@ -60,6 +64,8 @@ from orders
 group by year, month, category 
 order by 1, 2, 3;
 ```
+[result](https://github.com/eskapandr/DataLearn/blob/591cfd6a561d8e1bb2989c64615bc713ff6480dc/DE-101/Module02/images/sql_querie_3.png)
+
 ### 3.4. Sales and profit over time by product category and subcategory
 ```sql
 select category, 
@@ -70,6 +76,8 @@ from orders
 group by category, subcategory
 order by 1, 4 desc
 ```
+[result](https://github.com/eskapandr/DataLearn/blob/591cfd6a561d8e1bb2989c64615bc713ff6480dc/DE-101/Module02/images/sql_querie_4.png)
+
 ### 3.5 Sales, profit and orders count over time by manager
 ```sql
 with managers_results(person, orders_count, total_sales, total_profit) 
@@ -93,6 +101,8 @@ union
 select * from total_results
 order by 4 desc;
 ```
+[result](https://github.com/eskapandr/DataLearn/blob/591cfd6a561d8e1bb2989c64615bc713ff6480dc/DE-101/Module02/images/sql_querie_5.png)
+
 ### 3.6. Annual profit and YoY profit dynamics by segment
 ```sql
 with segment_profit_year(year, segment, profit)
@@ -110,6 +120,8 @@ from segment_profit_year
 group by year, segment 
 order by 2, 1; 
 ```
+[result](https://github.com/eskapandr/DataLearn/blob/591cfd6a561d8e1bb2989c64615bc713ff6480dc/DE-101/Module02/images/sql_querie_6.png)
+
 ### 3.7. Top-10 states by sales over time
 ```sql
 select region, 
@@ -120,6 +132,7 @@ group by region, state
 order by 3 desc
 limit 10
 ```
+[result](https://github.com/eskapandr/DataLearn/blob/591cfd6a561d8e1bb2989c64615bc713ff6480dc/DE-101/Module02/images/sql_querie_7.png)
 
 ## 4. Creating the data model 
 
