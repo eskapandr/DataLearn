@@ -6,7 +6,7 @@ Our first task in this module was to install the database [PostgreSQL](https://w
 
 ## 2. Loading data into the database. Creating SQL tables from Excel spreadsheets
 
-Then we needed to load data into the database from the Superstore.xlsx file. I used SQL scripts prepared by the course team. But there are other ways for doing that, like converting Excel spreadsheets into .csv files and loading them directly into Dbeaver or using [SQL Alchemy](https://www.sqlalchemy.org/).
+Then we needed to load data into the database from the Superstore.xlsx file. I used SQL scripts prepared by the course team. But there are other ways for doing that, like converting Excel spreadsheets into .csv files and loading them directly into Dbeaver or like using [SQL Alchemy](https://www.sqlalchemy.org/).
 
 ```python
 #installing and import packages
@@ -45,7 +45,7 @@ from orders;
 select extract(year from order_date) as year,
 	extract(month from order_date) as month,
 	segment,
-	round(sum(sales), 2) as sum_sales
+	round(sum(sales), 2) as total_sales
 from orders
 group by year, month, segment
 order by 1, 2, 3;
@@ -55,7 +55,7 @@ order by 1, 2, 3;
 select extract(year from order_date) as year,
        extract(month from order_date) as month,
        category,
-       round(sum(sales), 2) as sum_sales
+       round(sum(sales), 2) as total_sales
 from orders
 group by year, month, category 
 order by 1, 2, 3;
@@ -64,27 +64,27 @@ order by 1, 2, 3;
 ```sql
 select category, 
        subcategory, 
-       sum(sales) as sum_sales, 
-       sum(profit) as sum_profit
+       sum(sales) as total_sales, 
+       sum(profit) as total_profit
 from orders
 group by category, subcategory
 order by 1, 4 desc
 ```
 ### 3.5 Sales, profit and orders count over time by manager
 ```sql
-with managers_results(person, count_orders, sum_sales, sum_profit) 
+with managers_results(person, orders_count, total_sales, total_profit) 
 as
 (select person, 
-	count(order_id), 
+	count(distinct order_id), 
 	round(sum(sales), 2), 
 	round(sum(profit), 2)
 from people
 join orders on people.region = orders.region 
 group by person),
-total_results(person, count_orders, sum_sales, sum_profit) 
+total_results(person, orders_count, total_sales, total_profit) 
 as
 (select 'total', 
-	 count(order_id), 
+	 count(distinct order_id), 
 	 round(sum(sales), 2), 
 	 round(sum(profit), 2)
 from orders)
@@ -114,7 +114,7 @@ order by 2, 1;
 ```sql
 select region, 
        state, 
-       sum(sales) as sum_sales
+       sum(sales) as total_sales
 from orders
 group by region, state
 order by 1, 3 desc;
