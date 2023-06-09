@@ -9,20 +9,20 @@ Our first task in this module was to install the database [PostgreSQL](https://w
 Then we needed to load data into the database from the Superstore.xlsx file. I used SQL scripts prepared by the course team. But there are other ways for doing that, like converting Excel spreadsheets into .csv files and loading them directly into Dbeaver or using [SQL Alchemy](https://www.sqlalchemy.org/).
 
 ```python
+#installing and import packages
+pip install sqlalchemy
+pip install psycopg2
 import pandas as pd 
 from sqlalchemy import create_engine
 
-pip install psycopg2
-
 # connection
-# pass - your pass, localhost:5432 - connection to local host, postgres - the name of your db
-con = create_engine('postgresql+psycopg2://postgres:pass @localhost:5432/postgres')
+engine = create_engine('postgresql://username:password@localhost/database_name')
 
 #creating dataframe from csv
-df = pd.read_csv('<path_to_csv>')
+df = pd.read_csv('<path_to_file.csv>')
 
 #loading into the database
-df.to_sql('<the_name_of_your_db>', con, index=False, if_exists='replace', method='multi')
+df.to_sql('table_name', engine, if_exists='replace', index=False)
 ```
 ## 3. SQL queries to the database
 
