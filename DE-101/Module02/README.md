@@ -168,4 +168,5 @@ Here are some screenshots from my dashboard Superstore Key Metrics
 ![](images/dashboard_1.png)
 ![](images/dashboard_2.png)
 ![](images/dashboard_3.png)
+
 And [the online dashboard](https://lookerstudio.google.com/s/lzI2Dc-IdPk)
