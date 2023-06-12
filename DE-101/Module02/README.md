@@ -140,11 +140,11 @@ At this step we were asked to create a dimensional data model (conceptual, logic
 
 ### Conceptual scheme
 
-![conceptual_scheme](https://github.com/eskapandr/DataLearn/blob/295d0ce08f967542ef7b5c669e926780a2562ce2/DE-101/Module02/images/conceptual_scheme.png)
+![](images/conceptual_scheme.png)
 
 ### Physical scheme
 
-![physical_scheme](https://github.com/eskapandr/DataLearn/blob/295d0ce08f967542ef7b5c669e926780a2562ce2/DE-101/Module02/images/physical_scheme.png)
+![](images/physical_scheme.png)
 
 My [SQL-script](https://github.com/eskapandr/DataLearn/blob/a843751eaed6ac9e4a8b2a17b30ec55e2bf03147/DE-101/Module02/scripts/supersales_db.sql) for creating the data model
 
@@ -155,18 +155,17 @@ Our next task was to create a database on AWS Lightsail cloud server and upload 
 - Business Layer [from_stg_to_dw_sql](https://github.com/Data-Learn/data-engineering/blob/03f51ea85791fb1d6a86659bba3040db0b98471b/DE-101%20Modules/Module02/DE%20-%20101%20Lab%202.1/from_stg_to_dw.sql)
 
 ### My cloud database on AWS Lightsail
-![aws_lightsail_db](https://github.com/eskapandr/DataLearn/blob/008836014c5fa14e5b8a7b8b97ac6378d19de637/DE-101/Module02/images/db_lightsail.png)
+![](images/db_lightsail.png)
 
 ### Updated database in Dbeaver
-![aws_db_connection](https://github.com/eskapandr/DataLearn/blob/008836014c5fa14e5b8a7b8b97ac6378d19de637/DE-101/Module02/images/aws_db_connection.png)
+![](images/aws_db_connection.png)
 
 ## 6. Creating the dashboard in Looker Data Studio
 
 In the last part of the module, we tried to connect in Looker Data Studio to the cloud database created in the previous step and extract data to build the online dashboard.
 
 Here are some screenshots from my dashboard Superstore Key Metrics
-![dashboard_1](https://github.com/eskapandr/DataLearn/blob/00c6f9e62bdb677a0c2415fb1f0725d292c39768/DE-101/Module02/images/dashboard_1.png)
-![dashboard_2](https://github.com/eskapandr/DataLearn/blob/00c6f9e62bdb677a0c2415fb1f0725d292c39768/DE-101/Module02/images/dashboard_2.png)
-![dashboard_3](https://github.com/eskapandr/DataLearn/blob/00c6f9e62bdb677a0c2415fb1f0725d292c39768/DE-101/Module02/images/dashboard_3.png)
-
+![](images/dashboard_1.png)
+![](images/dashboard_2.png)
+![](images/dashboard_3.png)
 And [the online dashboard](https://lookerstudio.google.com/s/lzI2Dc-IdPk)
