@@ -150,7 +150,7 @@ My [SQL-script](https://github.com/eskapandr/DataLearn/blob/a843751eaed6ac9e4a8b
 
 ## 5. Connecting to the cloud database
 
-Our next task was to create a database on AWS Lightsail cloud server and upload our data for staging layer and dimensional model for business layer from sql files there.
+Our next task was to create a database on AWS Lightsail cloud server and upload our data for staging layer and dimensional model for business layer. I used SQL files for it prepared by the course author.
 - Staging [stg.orders.sql](https://github.com/Data-Learn/data-engineering/blob/03f51ea85791fb1d6a86659bba3040db0b98471b/DE-101%20Modules/Module02/DE%20-%20101%20Lab%202.1/stg.orders.sql)
 - Business Layer [from_stg_to_dw_sql](https://github.com/Data-Learn/data-engineering/blob/03f51ea85791fb1d6a86659bba3040db0b98471b/DE-101%20Modules/Module02/DE%20-%20101%20Lab%202.1/from_stg_to_dw.sql)
 
