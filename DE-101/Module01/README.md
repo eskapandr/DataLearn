@@ -14,4 +14,4 @@ As a possible example, I chose an AI-based image generation service (a mobile an
  
  Below is my solution:
 
-![My Solution](https://github.com/eskapandr/DataLearn/blob/main/DE-101/Module01/images/Mobile_app_data.drawio.png)
+![](images/Mobile_app_data.drawio.png)
