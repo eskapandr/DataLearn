@@ -24,4 +24,5 @@ Superstore is a mock dataset. It provides detailed sales information for a compa
 
 Here is my dashbord:
 
-![](images/Pasted%20image%2020230619000105.png)
+![](Pasted%20image%2020230619003903.png)
+
