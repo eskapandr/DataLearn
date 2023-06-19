@@ -20,9 +20,16 @@ Below is my solution:
 
 Then we had to create the dashboard in Excel from the [Superstore.xls](sources/Sample%20-%20Superstore.xls) file using Lookup, pivot tables and other functions of Excel.
 
-Superstore is a mock dataset. It provides detailed sales information for a company that sells to different types of customers in the USA. The dataset contains information for 4 years (from 2016 to 2019).
+Superstore is a mock dataset. It provides detailed sales information for a company that sells various products to different types of customers in the USA. The dataset contains information for 4 years (from 2016 to 2019).
 
-Here is my dashbord:
+Here is my dashbord (screenshot):
 
 ![](Pasted%20image%2020230619003903.png)
+
+And [my dashbord](sources/Sample%20-%20Superstore%20-%20MyDashboard.xlsx) with pivot tables in Excel file.
+
+Useful learning sources (in Russian) that helped me to finish this work:
+- [Nikolay Valiotti. How to create a dashboard in Excel?](https://www.youtube.com/watch?v=rxu8jmsvw98&t=1748s)
+- [Bilyal Hassenov. Pivot tables in Excel](https://www.youtube.com/playlist?list=PLsPotgU_ELTr4CErtpe13uGeCFX93Fiwb)
+
 
