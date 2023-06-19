@@ -24,7 +24,7 @@ Superstore is a mock dataset. It provides detailed sales information for a compa
 
 Here is my dashbord (screenshot):
 
-![](Pasted%20image%2020230619003903.png)
+![](images/Pasted%20image%2020230619003903.png)
 
 And [my dashbord](sources/Sample%20-%20Superstore%20-%20MyDashboard.xlsx) with pivot tables in Excel file.
 
