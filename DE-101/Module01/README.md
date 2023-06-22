@@ -20,7 +20,7 @@ Below is my solution:
 
 Then we had to create the dashboard in Excel from the [Superstore.xls](sources/Sample%20-%20Superstore.xls) file using Lookup, pivot tables and other functions of Excel.
 
-Superstore is a mock dataset. It provides detailed sales information for a company that sells various products to different types of customers in the USA. The dataset contains information for 4 years (from 2016 to 2019).
+Superstore is a mock dataset. It provides detailed sales information for a company that sells various categories of products to different segments of customers in the USA. The dataset contains information for 4 years (from 2016 to 2019).
 
 Here is my dashbord (screenshot):
 
